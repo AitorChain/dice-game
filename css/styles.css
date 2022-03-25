@@ -1,0 +1,150 @@
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6, p, a {
+    font-family: Lato;
+}
+
+.body {
+    height: 100vh;
+}
+
+.game-body {
+    align-items: center;
+    height: 100vh;
+}
+
+.player {
+    text-align: center;
+    filter: contrast(60%);
+    font-weight: 100;
+}
+
+.player-name {
+    font-size: 4vw;
+    text-transform: uppercase;
+    letter-spacing: 0.2vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+
+.player-score {
+    font-size: 9vw;
+    color: #eb4d4d;
+    margin-bottom: 3vw;
+}
+
+.active {
+    filter: contrast(100%);
+}
+
+.red-ball::after {
+    content: "\2022";
+    font-size: 4vw;
+    color: #eb4d4d;
+    top: 0vw;
+    right: 18vw;
+}
+
+.player-box {
+    background-color: #eb4d4d;
+    color: #fff;
+    width: 17vw;
+    margin: 0 auto;
+    padding: 1vw;
+}
+
+.player-current-label {
+    text-transform: uppercase;
+    margin-bottom: 0.5vw;
+    font-size: 1.8vw;
+    color: #222;
+    font-weight: 400;
+}
+
+.player-current-score {
+    font-size: 3vw;
+    font-weight: 400;
+}
+
+.controls, .turn-phone {
+    text-align: center;
+    padding: 2em 0em;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.lost-turn {
+    text-align: center;
+    padding: 2em 0em;
+    position: absolute;
+    left: 50%;
+    top: 8%;
+    font-weight: 300;
+    transform: translate(-50%, -50%);
+    font-size: 3vw;
+    color: #eb4d4d;
+}
+
+.bi {
+    margin-top: -0.4vw;
+    margin-right: 0.4vw;
+    -webkit-transition: all 0.1s;
+    transition: all 0.1s;
+}
+
+.controls > button {
+    width: auto;
+    color: #555;
+    background: none;
+    border: none;
+    font-family: Lato;
+    font-size: 2.25vw;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 300;
+    transition: all 0.05s;
+    -webkit-transition: all 0.05s;
+    display: block;
+    margin: 0 auto;
+    margin-top: 1.4vw;
+}
+
+.controls > button:hover {
+    font-weight: 400;
+}
+
+.controls > button:hover > .bi {
+    margin-right: 1.25vw;
+}
+
+.new-game {
+    padding-bottom: 1vw;
+}
+.dice {
+    max-width: 16vw;
+    margin: 1.5vw auto 1.5vw auto;
+    box-shadow: 0px 10px 60px rgb(12 12 12 / 34%);
+    display: block;
+}
+
+.turn-phone-photo {
+    max-width: 60vw;
+}
+
+@media screen and (orientation:portrait) {
+    main {
+        display:none;
+    }
+    .turn-phone {
+        display: block;
+    }
+}
+
+@media screen and (orientation:landscape) {
+    main {
+        display:block;
+    }
+    .turn-phone {
+        display: none;
+    }
+}
